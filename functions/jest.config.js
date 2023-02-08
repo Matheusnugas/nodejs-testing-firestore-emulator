@@ -1,7 +1,9 @@
+const { resolve } = require("path");
+const root = resolve(__dirname);
 module.exports = {
-  testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-  testPathIgnorePatterns: ["lib/", "node_modules/"],
-  moduleFileExtensions: ["js", "ts", "tsx", "jsx", "json", "node"],
+  rootDir: root,
+  displayName: "root-tests",
+  testMatch: ["<rootDir>/__tests__/*.test.js"],
   testEnvironment: "node",
-  rootDir: "./",
+  clearMocks: true,
 };
