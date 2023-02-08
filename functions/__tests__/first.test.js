@@ -38,7 +38,7 @@ describe("tests firebase", () => {
     });
     await testEnv.clearFirestore();
   });
-  // test
+  // test1234
   test("Test one", async () => {
     const testEnv = await initializeTestEnvironment({
       projectId: projectId,
