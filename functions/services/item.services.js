@@ -16,7 +16,7 @@ export default class ItemServices {
     return resultArray;
   }
 
-  // testing2
+  // testing23
 
   async getItemById(id) {
     const testingRef = doc(db, "testingDatabase", id);
