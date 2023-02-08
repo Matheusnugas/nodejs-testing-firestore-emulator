@@ -21,7 +21,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - run: npm install
     - name: Enter functions folder
       run: cd functions
     - run: npm install
