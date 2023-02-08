@@ -52,5 +52,6 @@ describe("tests firebase", () => {
     await assertSucceeds(
       firestore.collection("cocozinho").add({ sexo: "cocozinho2" })
     );
+    await alice.cleanup();
   });
 });
