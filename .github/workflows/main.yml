@@ -21,11 +21,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - run: npm install
     - name: Enter functions folder
       run: cd functions
+    - run: npm install
     - name: Install Firebase Emulator Suite
       run: npm install -g firebase-tools@9.20.0
     - name: Starts Emulator
       run: firebase emulators:start --only firestore
-    - run: npm ci
     - run: npm test
