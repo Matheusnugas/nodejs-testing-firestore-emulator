@@ -24,7 +24,7 @@ export default class ItemServices {
       ...docSnap.data(),
     };
   }
-  // Teste 123
+  // Teste 1234
   async createNewItem(payload) {
     const newItem = await addDoc(collection(db, "testingDatabase"), {
       ...payload,
